@@ -1,13 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:new_restaurant/bottom_navigation_page/favorite_page.dart';
-import 'package:new_restaurant/information/details_page_a.dart';
 import 'package:new_restaurant/main_page/drinks_page.dart';
 import 'package:new_restaurant/main_page/sweets_page.dart';
 import 'package:new_restaurant/menu/carusel_page.dart';
-// import 'package:new_restaurant/main_page/menu_page_first.dart';
-
 import '../main_page/burger.dart';
 import '../main_page/pizza_page.dart';
+import 'favorite_page.dart';
+
 
 class MyStatefulWidget extends StatefulWidget {
   MyStatefulWidget({Key? key}) : super(key: key);
@@ -19,13 +17,14 @@ class MyStatefulWidget extends StatefulWidget {
 class _MyStatefulWidgetState extends State<MyStatefulWidget> {
   int _selectedIndex = 2;
   final List<Widget> _mainContents = [
+
     CaruselPage(),
     FavoritePage(),
     BurgerMenu(),
     PizzaPage(),
     SweetsPage(),
     DrinksPage(),
-    // DetailsPage(),
+
 
 
   ];
@@ -62,6 +61,8 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
                       ),
                       labelType: NavigationRailLabelType.all,
                       destinations: [
+
+
                         NavigationRailDestination(
                           icon:
                           InkWell(
@@ -93,32 +94,32 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
                         NavigationRailDestination(
                           icon:
                           InkWell(
-                            onTap: (){
-                              Navigator.of(context).push(MaterialPageRoute(builder: (context)=> FavoritePage(),));
-
+                            onTap: () {
+                              Navigator.push(context,
+                                  MaterialPageRoute(builder: (context) => FavoritePage()));
                             },
-                            child: Icon(
+                            child:const Icon(
                               Icons.favorite_outline,
                               size: 29.0,
-                              color: Colors.white54,
+                              color: Colors.white,
                             ),
                           ),
 
-
-                          selectedIcon:InkWell(
+                          selectedIcon:  InkWell(
                             onTap: (){
-                              Navigator.of(context).push(MaterialPageRoute(builder: (context)=> FavoritePage(),));
-
+                              Navigator.push(context,
+                                  MaterialPageRoute(builder: (context) => FavoritePage()));
                             },
-                            child: Icon(
-                              Icons.favorite_outline,
+                            child:const Icon(
+                              Icons.favorite_sharp,
                               size: 29.0,
-                              color: Colors.white70,
+                              color: Colors.white,
                             ),
                           ),
-                          label: Text("Love"),
+                          label: Text(""),
 
                         ),
+
                         const    NavigationRailDestination(
                           icon: SizedBox.shrink(),
                           label: Padding(
@@ -180,6 +181,8 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
       ),
     );
   }
+
+
 
 
 

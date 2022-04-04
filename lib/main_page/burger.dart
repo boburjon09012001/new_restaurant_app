@@ -7,8 +7,11 @@ import 'package:new_restaurant/information/details_page_d.dart';
 import 'package:new_restaurant/information/details_page_e.dart';
 import 'package:new_restaurant/information/details_page_f.dart';
 
+
 class BurgerMenu extends StatefulWidget {
   BurgerMenu({Key? key}) : super(key: key);
+
+  get index => 0;
 
   @override
   _BurgerMenuState createState() => _BurgerMenuState();
@@ -23,6 +26,7 @@ class _BurgerMenuState extends State<BurgerMenu> {
 
   @override
   Widget build(BuildContext context) {
+
     return WillPopScope(
       onWillPop: () {
         _isItemSelected ?
@@ -70,6 +74,7 @@ class _BurgerMenuState extends State<BurgerMenu> {
           image: AssetImage("assets/burger/background.png"),
           fit: BoxFit.cover,
         ),
+
       ),
       child: Column(
         children: [
@@ -196,13 +201,15 @@ class _BurgerMenuState extends State<BurgerMenu> {
                                       Container(
                                         width: 50.0,
                                         height: 50.0,
+
                                         decoration: BoxDecoration(
                                           borderRadius: BorderRadius.circular(10.0),
                                           color: Color(0xFFC7C5D1),
+
                                         ),
-                                        child: Icon(
+                                        child:const Icon(
                                           Icons.add_circle_outline,
-                                          color: Color(0xFF175B8F),
+                                          color:  Color(0xFF175B8F),
                                         ),
                                       ),
                                       Container(
@@ -210,7 +217,7 @@ class _BurgerMenuState extends State<BurgerMenu> {
                                         child: ElevatedButton(
                                           style: ButtonStyle(
                                               foregroundColor: MaterialStateProperty.all<Color>(
-                                                  Colors.white70),
+                                                  Colors.white),
                                               backgroundColor: MaterialStateProperty.all<Color>(
                                                 Color(0xFF175B8F),
                                               ),
@@ -285,7 +292,7 @@ class _BurgerMenuState extends State<BurgerMenu> {
                                           color: Color(0xFF00195C),
                                         ),
                                         SizedBox(width: 4.0),
-                                        Text(
+                                 const       Text(
                                           "Sevimli",
                                           style: TextStyle(
                                             fontWeight: FontWeight.bold,
@@ -298,7 +305,7 @@ class _BurgerMenuState extends State<BurgerMenu> {
                                     SizedBox(
                                       height: 16.0,
                                     ),
-                                    Text("BIGBURGER",
+                             const       Text("BIGBURGER",
                                       style: TextStyle(
                                         fontWeight: FontWeight.bold,
                                         fontSize: 18.0,
@@ -310,8 +317,8 @@ class _BurgerMenuState extends State<BurgerMenu> {
                                     ),
                                     Row(
                                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                      children: <Widget>[
-                                        Text(
+                                      children:     const    [
+                                     Text(
                                           "Narxi :",
                                           style: TextStyle(
                                               fontSize: 17.0, fontWeight: FontWeight.bold),
@@ -328,18 +335,18 @@ class _BurgerMenuState extends State<BurgerMenu> {
                                     ),
                                     Row(
                                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                      children: <Widget>[
+                                      children: [
                                         Image.asset(
                                           "assets/image_burger/vaqt1.png",
                                           height: 14.0,
                                           color: Colors.black,
                                         ),
-                                        Text("15 min",
+                                        const             Text("15 min",
                                             style: TextStyle(
                                                 fontSize: 17.0,
                                                 color: Colors.indigo,
                                                 fontWeight: FontWeight.bold)),
-                                        SizedBox(
+                                        const         SizedBox(
                                           width: 6.0,
                                         ),
                                         Image.asset(
@@ -347,7 +354,7 @@ class _BurgerMenuState extends State<BurgerMenu> {
                                           height: 20.0,
                                           color: Colors.black,
                                         ),
-                                        Text("6 ta",
+                                        const  Text("6 ta",
                                             style: TextStyle(
                                               fontSize: 17.0,
                                             )),
@@ -366,7 +373,7 @@ class _BurgerMenuState extends State<BurgerMenu> {
                                             borderRadius: BorderRadius.circular(10.0),
                                             color: Color(0xFFC7C5D1),
                                           ),
-                                          child: Icon(
+                                          child: const Icon(
                                             Icons.add_circle_outline,
                                             color: Color(0xFF175B8F),
                                           ),
@@ -384,7 +391,7 @@ class _BurgerMenuState extends State<BurgerMenu> {
                                                     RoundedRectangleBorder>(
                                                     RoundedRectangleBorder(
                                                       borderRadius: BorderRadius.circular(8.0),
-                                                      side: BorderSide(
+                                                      side: const BorderSide(
                                                         color: Color(0xFF175B8F),
                                                       ),
                                                     ))),
@@ -451,7 +458,7 @@ class _BurgerMenuState extends State<BurgerMenu> {
                                           color: Color(0xFF00195C),
                                         ),
                                         SizedBox(width: 4.0),
-                                        Text(
+                                        const   Text(
                                           "Sevimli",
                                           style: TextStyle(
                                             fontWeight: FontWeight.bold,
@@ -464,7 +471,7 @@ class _BurgerMenuState extends State<BurgerMenu> {
                                     SizedBox(
                                       height: 16.0,
                                     ),
-                                    Text("CHIZBURGER ZAKAS",
+                                    const       Text("CHIZBURGER ZAKAS",
                                       style: TextStyle(
                                         fontWeight: FontWeight.bold,
                                         fontSize: 18.0,
@@ -476,8 +483,8 @@ class _BurgerMenuState extends State<BurgerMenu> {
                                     ),
                                     Row(
                                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                      children: <Widget>[
-                                        Text(
+                                      children:  const[
+                                               Text(
                                           "Narxi :",
                                           style: TextStyle(
                                               fontSize: 17.0, fontWeight: FontWeight.bold),
@@ -500,26 +507,26 @@ class _BurgerMenuState extends State<BurgerMenu> {
                                           height: 14.0,
                                           color: Colors.black,
                                         ),
-                                        Text("17 min",
+                                        const     Text("17 min",
                                             style: TextStyle(
                                                 fontSize: 17.0,
                                                 color: Colors.indigo,
                                                 fontWeight: FontWeight.bold)),
-                                        SizedBox(
+                                        const      SizedBox(
                                           width: 6.0,
                                         ),
-                                        Image.asset(
+                                            Image.asset(
                                           "assets/image_burger/tarkibi1.png",
                                           height: 20.0,
                                           color: Colors.black,
                                         ),
-                                        Text("6 ta",
+                                        const    Text("6 ta",
                                             style: TextStyle(
                                               fontSize: 17.0,
                                             )),
                                       ],
                                     ),
-                                    SizedBox(
+                                    const  SizedBox(
                                       height: 16.0,
                                     ),
                                     Row(
@@ -532,7 +539,7 @@ class _BurgerMenuState extends State<BurgerMenu> {
                                             borderRadius: BorderRadius.circular(10.0),
                                             color: Color(0xFFC7C5D1),
                                           ),
-                                          child: Icon(
+                                          child: const Icon(
                                             Icons.add_circle_outline,
                                             color: Color(0xFF175B8F),
                                           ),
@@ -550,8 +557,8 @@ class _BurgerMenuState extends State<BurgerMenu> {
                                                     RoundedRectangleBorder>(
                                                     RoundedRectangleBorder(
                                                       borderRadius: BorderRadius.circular(8.0),
-                                                      side: BorderSide(
-                                                        color: Color(0xFF175B8F),
+                                                      side: const BorderSide(
+                                                        color:  Color(0xFF175B8F),
                                                       ),
                                                     ))),
                                             onPressed: () {
@@ -586,7 +593,7 @@ class _BurgerMenuState extends State<BurgerMenu> {
                         clipBehavior: Clip.none,
                         alignment: Alignment.center,
                         children: [
-                          SizedBox(
+                          const  SizedBox(
                             height: 60.0,
                           ),
                           Card(
@@ -607,7 +614,7 @@ class _BurgerMenuState extends State<BurgerMenu> {
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
-                                    SizedBox(
+                                    const  SizedBox(
                                       height: 40.0,
                                     ),
                                     Row(
@@ -618,7 +625,7 @@ class _BurgerMenuState extends State<BurgerMenu> {
                                           color: Color(0xFF00195C),
                                         ),
                                         SizedBox(width: 4.0),
-                                        Text(
+                                        const Text(
                                           "Sevimli",
                                           style: TextStyle(
                                             fontWeight: FontWeight.bold,
@@ -628,35 +635,35 @@ class _BurgerMenuState extends State<BurgerMenu> {
                                         ),
                                       ],
                                     ),
-                                    SizedBox(
+                                    const  SizedBox(
                                       height: 16.0,
                                     ),
-                                    Text("CHIZBURGER ",
+                                    const   Text("CHIZBURGER ",
                                       style: TextStyle(
                                         fontWeight: FontWeight.bold,
                                         fontSize: 18.0,
                                         color: Colors.indigo,
                                       ),
                                     ),
-                                    SizedBox(
+                                    const  SizedBox(
                                       height: 16.0,
                                     ),
                                     Row(
                                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                      children: <Widget>[
+                                      children:  const[
                                         Text(
                                           "Narxi :",
                                           style: TextStyle(
                                               fontSize: 17.0, fontWeight: FontWeight.bold),
                                         ),
-                                        Text("17000 so'm",
+                                         Text("17000 so'm",
                                             style: TextStyle(
                                                 fontSize: 17.0,
                                                 fontWeight: FontWeight.bold,
                                                 color: Colors.indigo)),
                                       ],
                                     ),
-                                    SizedBox(
+                                    const SizedBox(
                                       height: 8.0,
                                     ),
                                     Row(
@@ -667,12 +674,12 @@ class _BurgerMenuState extends State<BurgerMenu> {
                                           height: 14.0,
                                           color: Colors.black,
                                         ),
-                                        Text("20 min",
+                                        const  Text("20 min",
                                             style: TextStyle(
                                                 fontSize: 17.0,
                                                 color: Colors.indigo,
                                                 fontWeight: FontWeight.bold)),
-                                        SizedBox(
+                                        const   SizedBox(
                                           width: 6.0,
                                         ),
                                         Image.asset(
@@ -680,13 +687,13 @@ class _BurgerMenuState extends State<BurgerMenu> {
                                           height: 20.0,
                                           color: Colors.black,
                                         ),
-                                        Text("5 ta",
+                                        const Text("5 ta",
                                             style: TextStyle(
                                               fontSize: 17.0,
                                             )),
                                       ],
                                     ),
-                                    SizedBox(
+                                    const SizedBox(
                                       height: 16.0,
                                     ),
                                     Row(
@@ -699,7 +706,7 @@ class _BurgerMenuState extends State<BurgerMenu> {
                                             borderRadius: BorderRadius.circular(10.0),
                                             color: Color(0xFFC7C5D1),
                                           ),
-                                          child: Icon(
+                                          child: const Icon(
                                             Icons.add_circle_outline,
                                             color: Color(0xFF175B8F),
                                           ),
@@ -717,7 +724,7 @@ class _BurgerMenuState extends State<BurgerMenu> {
                                                     RoundedRectangleBorder>(
                                                     RoundedRectangleBorder(
                                                       borderRadius: BorderRadius.circular(8.0),
-                                                      side: BorderSide(
+                                                      side: const BorderSide(
                                                         color: Color(0xFF175B8F),
                                                       ),
                                                     ))),
@@ -753,7 +760,7 @@ class _BurgerMenuState extends State<BurgerMenu> {
                         clipBehavior: Clip.none,
                         alignment: Alignment.center,
                         children: [
-                          SizedBox(
+                          const        SizedBox(
                             height: 60.0,
                           ),
                           Card(
@@ -774,7 +781,7 @@ class _BurgerMenuState extends State<BurgerMenu> {
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
-                                    SizedBox(
+                                    const      SizedBox(
                                       height: 40.0,
                                     ),
                                     Row(
@@ -785,7 +792,7 @@ class _BurgerMenuState extends State<BurgerMenu> {
                                           color: Color(0xFF00195C),
                                         ),
                                         SizedBox(width: 4.0),
-                                        Text(
+                                        const           Text(
                                           "Sevimli",
                                           style: TextStyle(
                                             fontWeight: FontWeight.bold,
@@ -795,35 +802,35 @@ class _BurgerMenuState extends State<BurgerMenu> {
                                         ),
                                       ],
                                     ),
-                                    SizedBox(
+                                    const       SizedBox(
                                       height: 16.0,
                                     ),
-                                    Text("BURGER KING ",
+                                    const        Text("BURGER KING ",
                                       style: TextStyle(
                                         fontWeight: FontWeight.bold,
                                         fontSize: 18.0,
                                         color: Colors.indigo,
                                       ),
                                     ),
-                                    SizedBox(
+                                    const  SizedBox(
                                       height: 16.0,
                                     ),
                                     Row(
                                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                      children: <Widget>[
-                                        Text(
+                                      children:  const[
+                                               Text(
                                           "Narxi :",
                                           style: TextStyle(
                                               fontSize: 17.0, fontWeight: FontWeight.bold),
                                         ),
-                                        Text("18000 so'm",
+                                            Text("18000 so'm",
                                             style: TextStyle(
                                                 fontSize: 17.0,
                                                 fontWeight: FontWeight.bold,
                                                 color: Colors.indigo)),
                                       ],
                                     ),
-                                    SizedBox(
+                                    const  SizedBox(
                                       height: 8.0,
                                     ),
                                     Row(
@@ -834,12 +841,12 @@ class _BurgerMenuState extends State<BurgerMenu> {
                                           height: 14.0,
                                           color: Colors.black,
                                         ),
-                                        Text("15 min",
+                                        const        Text("15 min",
                                             style: TextStyle(
                                                 fontSize: 17.0,
                                                 color: Colors.indigo,
                                                 fontWeight: FontWeight.bold)),
-                                        SizedBox(
+                                        const   SizedBox(
                                           width: 6.0,
                                         ),
                                         Image.asset(
@@ -847,7 +854,7 @@ class _BurgerMenuState extends State<BurgerMenu> {
                                           height: 20.0,
                                           color: Colors.black,
                                         ),
-                                        Text("4 ta",
+                                        const    Text("4 ta",
                                             style: TextStyle(
                                               fontSize: 17.0,
                                             )),
@@ -866,7 +873,7 @@ class _BurgerMenuState extends State<BurgerMenu> {
                                             borderRadius: BorderRadius.circular(10.0),
                                             color: Color(0xFFC7C5D1),
                                           ),
-                                          child: Icon(
+                                          child: const Icon(
                                             Icons.add_circle_outline,
                                             color: Color(0xFF175B8F),
                                           ),
@@ -952,7 +959,7 @@ class _BurgerMenuState extends State<BurgerMenu> {
                                           color: Color(0xFF00195C),
                                         ),
                                         SizedBox(width: 4.0),
-                                        Text(
+                                        const  Text(
                                           "Sevimli",
                                           style: TextStyle(
                                             fontWeight: FontWeight.bold,
@@ -965,7 +972,7 @@ class _BurgerMenuState extends State<BurgerMenu> {
                                     SizedBox(
                                       height: 16.0,
                                     ),
-                                    Text("GAMBURGER ",
+                                    const   Text("GAMBURGER ",
                                       style: TextStyle(
                                         fontWeight: FontWeight.bold,
                                         fontSize: 18.0,
@@ -977,13 +984,13 @@ class _BurgerMenuState extends State<BurgerMenu> {
                                     ),
                                     Row(
                                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                      children: <Widget>[
-                                        Text(
+                                      children:  const[
+                                           Text(
                                           "Narxi :",
                                           style: TextStyle(
                                               fontSize: 17.0, fontWeight: FontWeight.bold),
                                         ),
-                                        Text("12000 so'm",
+                                           Text("12000 so'm",
                                             style: TextStyle(
                                                 fontSize: 17.0,
                                                 fontWeight: FontWeight.bold,
@@ -1001,7 +1008,7 @@ class _BurgerMenuState extends State<BurgerMenu> {
                                           height: 14.0,
                                           color: Colors.black,
                                         ),
-                                        Text("10 min",
+                                        const     Text("10 min",
                                             style: TextStyle(
                                                 fontSize: 17.0,
                                                 color: Colors.indigo,
@@ -1020,7 +1027,7 @@ class _BurgerMenuState extends State<BurgerMenu> {
                                             )),
                                       ],
                                     ),
-                                    SizedBox(
+                                    const      SizedBox(
                                       height: 16.0,
                                     ),
                                     Row(
@@ -1033,7 +1040,7 @@ class _BurgerMenuState extends State<BurgerMenu> {
                                             borderRadius: BorderRadius.circular(10.0),
                                             color: Color(0xFFC7C5D1),
                                           ),
-                                          child: Icon(
+                                          child: const Icon(
                                             Icons.add_circle_outline,
                                             color: Color(0xFF175B8F),
                                           ),
@@ -1051,7 +1058,7 @@ class _BurgerMenuState extends State<BurgerMenu> {
                                                     RoundedRectangleBorder>(
                                                     RoundedRectangleBorder(
                                                       borderRadius: BorderRadius.circular(8.0),
-                                                      side: BorderSide(
+                                                      side: const BorderSide(
                                                         color: Color(0xFF175B8F),
                                                       ),
                                                     ))),
