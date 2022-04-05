@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:new_restaurant/recipe/recipe_burger.dart';
 
+import '../route/page_route.dart';
 import 'carusel_page_details.dart';
 
 
@@ -283,7 +284,10 @@ class _CaruselPageState extends State<CaruselPage> {
  Widget  myContainer( Recipe recipe,context ){
     return  InkWell(
       onTap: (){
-        Navigator.of(context).push(MaterialPageRoute(builder: (context)=>  CallingPage() ));
+        setState(() {
+          Navigator.of(context).push(createRoute(CallingPage()));
+
+        });
       },
       child: Container(
         width: 260.0,
@@ -336,8 +340,10 @@ class _CaruselPageState extends State<CaruselPage> {
   Widget  myWidget( Recipe recipe,context ){
     return  InkWell(
       onTap: (){
-        Navigator.of(context).push(MaterialPageRoute(builder: (context)=>  CallingPage() ));
+        setState(() {
+          Navigator.of(context).push(createRoute(CallingPage()));
 
+        });
       },
       child: Container(
         width: 260.0,
@@ -390,8 +396,10 @@ class _CaruselPageState extends State<CaruselPage> {
   Widget  myPizza( Recipe recipe,context ){
     return  InkWell(
       onTap: (){
-        Navigator.of(context).push(MaterialPageRoute(builder: (context)=>  CallingPage() ));
+        setState(() {
+          Navigator.of(context).push(createRoute(CallingPage()));
 
+        });
       },
       child: Container(
         width: 260.0,

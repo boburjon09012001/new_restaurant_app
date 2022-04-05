@@ -8,6 +8,8 @@ import 'package:new_restaurant/information/details_drinks_e.dart';
 import 'package:new_restaurant/information/details_drinks_f.dart';
 import 'package:new_restaurant/information/details_drinks_j.dart';
 
+import '../route/page_route.dart';
+
 
 class DrinksPage extends StatefulWidget {
   const DrinksPage({Key? key}) : super(key: key);
@@ -209,9 +211,9 @@ class _DrinksPageState extends State<DrinksPage> {
 
                                             onPressed: (){
                                               setState(() {
-                                                _isMealSelected = true;
-                                                Navigator.of(context).push(MaterialPageRoute(builder:
-                                                    (context)=>  DetailsPageDrinks()));
+                                                _isItemSelected = true;
+                                                Navigator.of(context).push(createRoute(DetailsPageDrinks()));
+
                                               });
                                             },
                                             child:const Text("Ma'lumotlar"),
@@ -355,9 +357,9 @@ class _DrinksPageState extends State<DrinksPage> {
 
                                             onPressed: (){
                                               setState(() {
-                                                _isMealSelected = true;
-                                                Navigator.of(context).push(MaterialPageRoute(builder:
-                                                    (context)=>  DetailsPageDrinks1()));
+                                                _isItemSelected = true;
+                                                Navigator.of(context).push(createRoute(DetailsPageDrinks1()));
+
                                               });
                                             },
                                             child:const Text("Ma'lumotlar"),
@@ -501,9 +503,9 @@ class _DrinksPageState extends State<DrinksPage> {
 
                                             onPressed: (){
                                               setState(() {
-                                                _isMealSelected = true;
-                                                Navigator.of(context).push(MaterialPageRoute(builder:
-                                                    (context)=>  DetailsPageDrinks2()));
+                                                _isItemSelected = true;
+                                                Navigator.of(context).push(createRoute(DetailsPageDrinks2()));
+
                                               });
                                             },
                                             child:const Text("Ma'lumotlar"),
@@ -647,9 +649,9 @@ class _DrinksPageState extends State<DrinksPage> {
 
                                             onPressed: (){
                                               setState(() {
-                                                _isMealSelected = true;
-                                                Navigator.of(context).push(MaterialPageRoute(builder:
-                                                    (context)=>  DetailsPageDrinks3()));
+                                                _isItemSelected = true;
+                                                Navigator.of(context).push(createRoute(DetailsPageDrinks3()));
+
                                               });
                                             },
                                             child:const Text("Ma'lumotlar"),
@@ -793,9 +795,9 @@ class _DrinksPageState extends State<DrinksPage> {
 
                                             onPressed: (){
                                               setState(() {
-                                                _isMealSelected = true;
-                                                Navigator.of(context).push(MaterialPageRoute(builder:
-                                                    (context)=>  DetailsPageDrinks4()));
+                                                _isItemSelected = true;
+                                                Navigator.of(context).push(createRoute(DetailsPageDrinks4()));
+
                                               });
                                             },
                                             child:const Text("Ma'lumotlar"),
@@ -939,9 +941,9 @@ class _DrinksPageState extends State<DrinksPage> {
 
                                             onPressed: (){
                                               setState(() {
-                                                _isMealSelected = true;
-                                                Navigator.of(context).push(MaterialPageRoute(builder:
-                                                    (context)=>  DetailsPageDrinks5()));
+                                                _isItemSelected = true;
+                                                Navigator.of(context).push(createRoute(DetailsPageDrinks5()));
+
                                               });
                                             },
                                             child:const Text("Ma'lumotlar"),
@@ -1085,9 +1087,9 @@ class _DrinksPageState extends State<DrinksPage> {
 
                                             onPressed: (){
                                               setState(() {
-                                                _isMealSelected = true;
-                                                Navigator.of(context).push(MaterialPageRoute(builder:
-                                                    (context)=>  DetailsPageDrinks6()));
+                                                _isItemSelected = true;
+                                                Navigator.of(context).push(createRoute(DetailsPageDrinks6()));
+
                                               });
                                             },
                                             child:const Text("Ma'lumotlar"),

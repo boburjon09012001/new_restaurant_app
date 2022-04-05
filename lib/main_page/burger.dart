@@ -7,6 +7,8 @@ import 'package:new_restaurant/information/details_page_d.dart';
 import 'package:new_restaurant/information/details_page_e.dart';
 import 'package:new_restaurant/information/details_page_f.dart';
 
+import '../route/page_route.dart';
+
 
 class BurgerMenu extends StatefulWidget {
   BurgerMenu({Key? key}) : super(key: key);
@@ -232,7 +234,8 @@ class _BurgerMenuState extends State<BurgerMenu> {
                                           onPressed: () {
                                             setState(() {
                                               _isItemSelected = true;
-                                              Navigator.push(context, MaterialPageRoute(builder: (context)=> DetailsPage() ));
+                                              Navigator.of(context).push(createRoute(DetailsPage()));
+
                                             });
                                           },
                                           child: Text("Ma'lumotlar"),
@@ -398,7 +401,8 @@ class _BurgerMenuState extends State<BurgerMenu> {
                                             onPressed: () {
                                               setState(() {
                                                 _isItemSelected = true;
-                                                Navigator.push(context, MaterialPageRoute(builder:(context)=> DetailsPage2()));
+                                                Navigator.of(context).push(createRoute(DetailsPage2()));
+
                                               });
                                             },
                                             child: Text("Ma'lumotlar"),
@@ -564,7 +568,7 @@ class _BurgerMenuState extends State<BurgerMenu> {
                                             onPressed: () {
                                               setState(() {
                                                 _isItemSelected = true;
-                                                Navigator.push(context, MaterialPageRoute(builder:(context)=> DetailsPage3()));
+                                                Navigator.of(context).push(createRoute(DetailsPage3()));
 
                                               });
                                             },
@@ -731,7 +735,7 @@ class _BurgerMenuState extends State<BurgerMenu> {
                                             onPressed: () {
                                               setState(() {
                                                 _isItemSelected = true;
-                                                Navigator.push(context, MaterialPageRoute(builder:(context)=> DetailsPage4()));
+                                                Navigator.of(context).push(createRoute(DetailsPage4()));
 
                                               });
                                             },
@@ -898,7 +902,7 @@ class _BurgerMenuState extends State<BurgerMenu> {
                                             onPressed: () {
                                               setState(() {
                                                 _isItemSelected = true;
-                                                Navigator.push(context, MaterialPageRoute(builder:(context)=> DetailsPage5()));
+                                                Navigator.of(context).push(createRoute(DetailsPage5()));
 
                                               });
                                             },
@@ -1065,7 +1069,7 @@ class _BurgerMenuState extends State<BurgerMenu> {
                                             onPressed: () {
                                               setState(() {
                                                 _isItemSelected = true;
-                                                Navigator.push(context, MaterialPageRoute(builder:(context)=> DetailsPage6()));
+                                                Navigator.of(context).push(createRoute(DetailsPage6()));
 
                                               });
                                             },

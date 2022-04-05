@@ -4,6 +4,7 @@ import 'package:new_restaurant/main_page/sweets_page.dart';
 import 'package:new_restaurant/menu/carusel_page.dart';
 import '../main_page/burger.dart';
 import '../main_page/pizza_page.dart';
+import '../route/page_route.dart';
 import 'favorite_page.dart';
 
 
@@ -67,8 +68,10 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
                           icon:
                           InkWell(
                             onTap: () {
-                              Navigator.push(context,
-                                  MaterialPageRoute(builder: (context) => CaruselPage()));
+                              setState(() {
+                                Navigator.of(context).push(createRoute(CaruselPage()));
+
+                              });
                             },
                             child:const Icon(
                               Icons.home,
@@ -79,8 +82,10 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
 
                           selectedIcon:  InkWell(
                             onTap: (){
-                              Navigator.push(context,
-                                  MaterialPageRoute(builder: (context) => CaruselPage()));
+                              setState(() {
+                                Navigator.of(context).push(createRoute(CaruselPage()));
+
+                              });
                             },
                             child: Icon(
                               Icons.home,
@@ -95,8 +100,10 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
                           icon:
                           InkWell(
                             onTap: () {
-                              Navigator.push(context,
-                                  MaterialPageRoute(builder: (context) => FavoritePage()));
+                              setState(() {
+                                Navigator.of(context).push(createRoute(FavoritePage()));
+
+                              });
                             },
                             child:const Icon(
                               Icons.favorite_outline,
@@ -107,8 +114,10 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
 
                           selectedIcon:  InkWell(
                             onTap: (){
-                              Navigator.push(context,
-                                  MaterialPageRoute(builder: (context) => FavoritePage()));
+                              setState(() {
+                                Navigator.of(context).push(createRoute(FavoritePage()));
+
+                              });
                             },
                             child:const Icon(
                               Icons.favorite_sharp,

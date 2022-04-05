@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:new_restaurant/menu/carusel_page_details.dart';
 import '../recipe/recipe_burger.dart';
+import '../route/page_route.dart';
 
 class FavoritePage extends StatefulWidget {
   FavoritePage({Key? key}) : super(key: key);
@@ -31,7 +32,7 @@ class _FavoritePageState extends State<FavoritePage> {
            return  InkWell(
              onTap: (){
                setState(() {
-                 Navigator.push(BuildContext, MaterialPageRoute(builder: (context)=>CallingPage()));
+                Navigator.of(BuildContext).push(createRoute(CallingPage()));
 
                });
              },

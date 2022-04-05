@@ -5,6 +5,8 @@ import 'package:new_restaurant/information/details_sweets_b.dart';
 import 'package:new_restaurant/information/details_sweets_c.dart';
 import 'package:new_restaurant/information/details_sweets_d.dart';
 
+import '../route/page_route.dart';
+
 class SweetsPage extends StatefulWidget {
   const SweetsPage({Key? key}) : super(key: key);
 
@@ -206,9 +208,9 @@ class _SweetsPageState extends State<SweetsPage> {
 
                                             onPressed: (){
                                               setState(() {
-                                                _isMealSelected = true;
-                                                Navigator.of(context).push(MaterialPageRoute(builder:
-                                                    (context)=>  DetailsPageSweets()));
+                                                _isItemSelected = true;
+                                                Navigator.of(context).push(createRoute(DetailsPageSweets()));
+
                                               });
                                             },
                                             child:const Text("Ma'lumotlar"),
@@ -352,9 +354,9 @@ class _SweetsPageState extends State<SweetsPage> {
 
                                             onPressed: (){
                                               setState(() {
-                                                _isMealSelected = true;
-                                                Navigator.of(context).push(MaterialPageRoute(builder:
-                                                    (context)=>  DetailsPageSweets2()));
+                                                _isItemSelected = true;
+                                                Navigator.of(context).push(createRoute(DetailsPageSweets2()));
+
                                               });
                                             },
                                             child:const Text("Ma'lumotlar"),
@@ -498,9 +500,9 @@ class _SweetsPageState extends State<SweetsPage> {
 
                                             onPressed: (){
                                               setState(() {
-                                                _isMealSelected = true;
-                                                Navigator.of(context).push(MaterialPageRoute(builder:
-                                                    (context)=>  DetailsPageSweets3()));
+                                                _isItemSelected = true;
+                                                Navigator.of(context).push(createRoute(DetailsPageSweets3()));
+
                                               });
                                             },
                                             child:const Text("Ma'lumotlar"),
@@ -644,9 +646,9 @@ class _SweetsPageState extends State<SweetsPage> {
 
                                             onPressed: (){
                                               setState(() {
-                                                _isMealSelected = true;
-                                                Navigator.of(context).push(MaterialPageRoute(builder:
-                                                    (context)=>  DetailsPageSweets4()));
+                                                _isItemSelected = true;
+                                                Navigator.of(context).push(createRoute(DetailsPageSweets4()));
+
                                               });
                                             },
                                             child:const Text("Ma'lumotlar"),

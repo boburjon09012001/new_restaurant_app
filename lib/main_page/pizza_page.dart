@@ -8,6 +8,8 @@ import 'package:new_restaurant/information/details_pizza_c.dart';
 import 'package:new_restaurant/information/details_pizza_d.dart';
 import 'package:new_restaurant/recipe/only_pizza.dart';
 
+import '../route/page_route.dart';
+
 class PizzaPage extends StatefulWidget {
   const  PizzaPage({Key? key}) : super(key: key);
 
@@ -205,9 +207,9 @@ class _PizzaPageState extends State< PizzaPage> {
 
                                         onPressed: (){
                                           setState(() {
-                                            _isMealSelected = true;
-                                            Navigator.of(context).push(MaterialPageRoute(builder:
-                                                (context)=> DetailsPagePizza1()));
+                                            _isItemSelected = true;
+                                            Navigator.of(context).push(createRoute(DetailsPagePizza1()));
+
                                           });
                                         },
                                         child:const Text("Ma'lumotlar"),
@@ -351,8 +353,8 @@ class _PizzaPageState extends State< PizzaPage> {
 
                                             onPressed: (){
                                               setState(() {
-                                                _isMealSelected = true;
-                                                Navigator.of(context).push(MaterialPageRoute(builder: (context)=> DetailsPagePizza()));
+                                                _isItemSelected = true;
+                                                Navigator.of(context).push(createRoute(DetailsPagePizza()));
 
                                               });
                                             },
@@ -497,8 +499,8 @@ class _PizzaPageState extends State< PizzaPage> {
 
                                             onPressed: (){
                                               setState(() {
-                                                _isMealSelected = true;
-                                                Navigator.of(context).push(MaterialPageRoute(builder: (context)=> DetailsPagePizza2()));
+                                                _isItemSelected = true;
+                                                Navigator.of(context).push(createRoute(DetailsPagePizza2()));
 
                                               });
                                             },
@@ -643,8 +645,8 @@ class _PizzaPageState extends State< PizzaPage> {
 
                                             onPressed: (){
                                               setState(() {
-                                                _isMealSelected = true;
-                                                Navigator.of(context).push(MaterialPageRoute(builder: (context)=> DetailsPagePizza3()));
+                                                _isItemSelected = true;
+                                                Navigator.of(context).push(createRoute(DetailsPagePizza3()));
 
                                               });
                                             },
