@@ -83,7 +83,7 @@ class _FavoritePageState extends State<FavoritePage> {
           children: [
             Container(
               margin: EdgeInsets.only(left: 16.0),
-              width: 160.0,
+              width: 120.0,
               height: 120.0,
               child:   ClipRRect(
                 borderRadius: BorderRadius.circular(20), // Image border

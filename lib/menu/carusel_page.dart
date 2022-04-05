@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:carousel_slider/carousel_slider.dart';
-import 'package:new_restaurant/information/details_page_a.dart';
 import 'package:new_restaurant/recipe/recipe_burger.dart';
 
 import 'carusel_page_details.dart';
@@ -39,7 +38,7 @@ class _CaruselPageState extends State<CaruselPage> {
   Widget build(BuildContext context) {
     MediaQueryData mediaQueryData = MediaQuery.of(context);
     var size = mediaQueryData.size;
-    var orientation = mediaQueryData.orientation;
+    // var orientation = mediaQueryData.orientation;
     return Scaffold(
 
       body: Container(
