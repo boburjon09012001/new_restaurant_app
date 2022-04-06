@@ -7,7 +7,6 @@ import 'package:new_restaurant/information/details_drinks_d.dart';
 import 'package:new_restaurant/information/details_drinks_e.dart';
 import 'package:new_restaurant/information/details_drinks_f.dart';
 import 'package:new_restaurant/information/details_drinks_j.dart';
-
 import '../route/page_route.dart';
 
 
@@ -17,23 +16,7 @@ class DrinksPage extends StatefulWidget {
   @override
   _DrinksPageState createState() => _DrinksPageState();
 }
-List <Color> _color = const [
-  Color(0xFFF2DFE1),
-  Color(0xFFDCC7B1),
-  Color(0xFFFFC5A8),
-  Color(0xFF71C3A1),
-  Color(0xFFA8B6FF),
-  Color(0xFFFFE7A8),
-  Color(0xFFCEA8FF),
-  Color(0xFFA8FFB1),
-  Color(0xFFFFA8A8),
 
-
-];
-
-
-bool _isMealSelected = false;
-int _selectedItemIndex = 0;
 class _DrinksPageState extends State<DrinksPage> {
 
   bool _isItemSelected = true;

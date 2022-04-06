@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:new_restaurant/menu/carusel_page_details.dart';
 import '../recipe/recipe_burger.dart';

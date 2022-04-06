@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
 import 'package:new_restaurant/page_view_indicator/first_page.dart';
-import '../menu/navigation_rail.dart';
 
 
 

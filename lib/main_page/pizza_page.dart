@@ -1,12 +1,9 @@
 import 'dart:io';
-
 import 'package:flutter/material.dart';
-import 'package:new_restaurant/information/details_page_a.dart';
 import 'package:new_restaurant/information/details_pizza_b.dart';
 import 'package:new_restaurant/information/details_pizza_a.dart';
 import 'package:new_restaurant/information/details_pizza_c.dart';
 import 'package:new_restaurant/information/details_pizza_d.dart';
-import 'package:new_restaurant/recipe/only_pizza.dart';
 
 import '../route/page_route.dart';
 
@@ -16,21 +13,9 @@ class PizzaPage extends StatefulWidget {
   @override
   _PizzaPageState createState() => _PizzaPageState();
 }
-var _color = const [
-  Color(0xFFF2DFE1),
-  Color(0xFFDCC7B1),
-  Color(0xFFFFC5A8),
-  Color(0xFF71C3A1),
-  Color(0xFFA8B6FF),
-  Color(0xFFFFE7A8),
-  Color(0xFFCEA8FF),
-  Color(0xFFA8FFB1),
-  Color(0xFFFFA8A8),
 
 
-];
 
-bool _isMealSelected = true;
 class _PizzaPageState extends State< PizzaPage> {
 
 

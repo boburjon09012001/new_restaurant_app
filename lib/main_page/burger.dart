@@ -6,7 +6,6 @@ import 'package:new_restaurant/information/details_page_c.dart';
 import 'package:new_restaurant/information/details_page_d.dart';
 import 'package:new_restaurant/information/details_page_e.dart';
 import 'package:new_restaurant/information/details_page_f.dart';
-
 import '../route/page_route.dart';
 
 
@@ -73,7 +72,9 @@ class _BurgerMenuState extends State<BurgerMenu> {
       height: 1000.0,
       decoration:const BoxDecoration(
         image: DecorationImage(
-          image: AssetImage("assets/burger/background.png"),
+          image: AssetImage("assets/burger/background.png",
+
+          ),
           fit: BoxFit.cover,
         ),
 

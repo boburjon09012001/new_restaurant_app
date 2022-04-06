@@ -1,6 +1,6 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:new_restaurant/menu/navigation_rail.dart';
+import '../route/page_route.dart';
 
 class FirstPage extends StatefulWidget {
   const FirstPage({Key? key}) : super(key: key);
@@ -15,7 +15,6 @@ class _FirstPageState extends State<FirstPage> {
   Widget build(BuildContext context) {
     MediaQueryData mediaQueryData = MediaQuery.of(context);
     var size = mediaQueryData.size;
-    var orientation = mediaQueryData.orientation;
     return Scaffold(
       body: Column(
           children: [
@@ -76,7 +75,11 @@ class _FirstPageState extends State<FirstPage> {
               width: 376.0,
               height: 60.0,
               child: ElevatedButton(onPressed: (){
-                Navigator.of(context).push(MaterialPageRoute(builder: (context)=> MyStatefulWidget() ));
+                setState(() {
+
+                  Navigator.of(context).push(createRoute(MyStatefulWidget()));
+
+                });
                  },
                   style: ElevatedButton.styleFrom(
                     primary: const Color(0xFF1D415E), // Background color
