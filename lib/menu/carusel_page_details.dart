@@ -35,6 +35,7 @@ class _CallingPageState extends State<CallingPage> {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
+
                     Container(
                       margin: EdgeInsets.only(left: 20.0 ,top: 30.0),
                       width: 48,
@@ -63,14 +64,33 @@ class _CallingPageState extends State<CallingPage> {
                   ],
                 ),
                 Card(
-                  margin: EdgeInsets.only( left : 40.0, right: 40.0 , top: 260.0 , ),
+                  margin: EdgeInsets.only( left : 40.0, right: 40.0 , top: 180.0 , ),
                   elevation: 20.0,
                   child: Container(
-                    height: 260.0,
+                    height: 360.0,
                     child: Center(
                       child: Column(
                         children: [
-
+                          Padding(
+                            padding:const EdgeInsets.only(top: 25.0,left: 25.0,right: 25.0, bottom: 0.0),
+                            child: Row(
+                              children: [
+                                Icon(
+                                  Icons.location_on_outlined,
+                                ),
+                                SizedBox(
+                                  width: 4.0,
+                                ),
+                                Container(
+                                  child: Expanded(
+                                    child: Text("Kosonsoy tuman Kosonsoy shahri. \n Mo'njal : Artel magazin tepasi",
+                                    style: TextStyle(fontSize: 16, fontWeight: FontWeight.normal),
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
                           Padding(
                             padding: const EdgeInsets.all(25.0),
                             child: TextField(

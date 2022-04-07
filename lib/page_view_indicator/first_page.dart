@@ -18,7 +18,7 @@ class _FirstPageState extends State<FirstPage> {
     return Scaffold(
       body: Column(
           children: [
-            SafeArea(child: Container(
+            Container(
               decoration:const BoxDecoration(
                 borderRadius: BorderRadius.only(
                   bottomLeft: Radius.circular(50.0),
@@ -34,7 +34,7 @@ class _FirstPageState extends State<FirstPage> {
               ),
               height: size.height * 0.55,
 
-            )),
+            ),
             Row(
               children:const [
                 Padding(
